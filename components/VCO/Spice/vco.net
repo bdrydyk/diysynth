@@ -1,0 +1,41 @@
+* N:\Articles\Projects\VCO DIY Synth\Spice\vco.asc
+R1 N003 KEY 100K
+XU1 0 N003 VCC VEE N004 level.2 Avol=1Meg GBW=10Meg Slew=10Meg ilimit=25m rail=0 Vos=0 phimargin=45 en=0 enk=0 in=0 ink=0 Rin=500Meg
+R2 N004 N003 1.8K
+R3 N003 TUNE 100K
+R4 N003 LFO 100K
+V1 VCC 0 5V
+V2 VEE 0 -4V
+V3 KEY 0 2.833
+Q1 N007 N004 N010 0 NPN
+Q2 N001 0 N010 0 NPN
+XU3 0 N007 VCC VEE N011 level.2 Avol=1Meg GBW=10Meg Slew=10Meg ilimit=25m rail=0 Vos=0 phimargin=45 en=0 enk=0 in=0 ink=0 Rin=500Meg
+C1 N011 N007 1nF
+R5 N010 N011 1K
+R6 VCC N007 1Meg
+V4 NC_01 0 PULSE(0 5 0 1ms 0 0 0)
+XU4 0 N001 VCC VEE INPUT level.2 Avol=1Meg GBW=10Meg Slew=10Meg ilimit=25m rail=0 Vos=0 phimargin=45 en=0 enk=0 in=0 ink=0 Rin=500Meg
+R7 INPUT N001 30K
+XU2 N008 N002 VCC 0 TRIANGLE level.2 Avol=1Meg GBW=10Meg Slew=10Meg ilimit=25m rail=0 Vos=0 phimargin=45 en=0 enk=0 in=0 ink=0 Rin=500Meg
+R8 N002 INPUT 100K
+R9 N008 INPUT 47K
+R10 N012 N002 47K
+R11 0 N008 47K
+Q3 N012 N013 0 0 NPN
+C2 TRIANGLE N002 3.8863nF
+XU5 N009 TRIANGLE VCC 0 SQUARE level.2 Avol=1Meg GBW=10Meg Slew=10Meg ilimit=25m rail=0 Vos=0 phimargin=45 en=0 enk=0 in=0 ink=0 Rin=500Meg
+R12 SQUARE N009 100K
+R13 N009 VREF 47K
+V5 LFO 0
+XU6 NC_02 N006 VCC 0 N005 level.2 Avol=1Meg GBW=10Meg Slew=10Meg ilimit=25m rail=0 Vos=0 phimargin=45 en=0 enk=0 in=0 ink=0 Rin=500Meg
+R14 N005 N006 14K
+R15 N006 0 1K
+R16 SQUARE N013 100K
+V6 VREF 0 2.5V
+.model NPN NPN
+.model PNP PNP
+.lib C:\Program Files (x86)\LTC\LTspiceIV\lib\cmp\standard.bjt
+.tran 0 1000ms 0 10us startup uic
+.lib UniversalOpamps2.sub
+.backanno
+.end
