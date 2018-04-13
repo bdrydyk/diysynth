@@ -21,6 +21,7 @@ This repository contains reference designs for synth projects as well as works i
 * [MFOS - Sound Lab Mini-Synth Mark II](http://musicfromouterspace.com/analogsynth_new/SOUNDLABMINIMARKII/page1.php)
 * [birthofasynth - CEM3340 based VCO](http://www.birthofasynth.com/Thomas_Henry/Pages/VCO_Maximus-Detail.html#VCO%20Maximus)
 * [sruthi - VCO](https://mutable-instruments.net/archive/shruthi/build/)
+* [another CEM3340 VCO with an example PCB](https://modularaddict.com/nlc-cem3340-pcb)
 
 ### VCF
 
@@ -28,3 +29,7 @@ This repository contains reference designs for synth projects as well as works i
 
 ### VCA
 
+### Other
+
+* [Modular PCBs](https://modularaddict.com/parts/pcbs)
+* [the vco](http://secretlifeofsynthesizers.com/the-vco/)
