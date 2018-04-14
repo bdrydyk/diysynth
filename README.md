@@ -17,6 +17,7 @@ This repository contains reference designs for synth projects as well as works i
 
 ### VCO
 
+* [modular addict - NLC CEM3340 VCO PCB](https://modularaddict.com/parts/pcbs/nlc-cem3340-pcb)
 * [MFOS - Modular VCO](http://musicfromouterspace.com/analogsynth_new/VCO20120618REV0/VCO20120618REV0.html)
 * [MFOS - Sound Lab Mini-Synth Mark II](http://musicfromouterspace.com/analogsynth_new/SOUNDLABMINIMARKII/page1.php)
 * [birthofasynth - CEM3340 based VCO](http://www.birthofasynth.com/Thomas_Henry/Pages/VCO_Maximus-Detail.html#VCO%20Maximus)
